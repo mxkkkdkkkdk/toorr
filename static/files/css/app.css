@@ -1,0 +1,176 @@
+@import url("./sections/omni.css");
+@import url("./sections/torrents.css");
+@import url("./sections/downloads.css");
+@import url("./sections/footer.css");
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  padding-top: 25px;
+  padding-bottom: 40px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media (max-width: 740px) {
+  .container {
+    margin: 0 10px;
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  body .title a {
+    font-size: 1.65rem;
+  }
+}
+
+html body .muted {
+  color: gray;
+}
+
+.ellipsis {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+[ng-click] {
+  cursor: pointer;
+}
+
+.disabled {
+  cursor: default !important;
+}
+
+.icon[ng-click] {
+  font-size: 1.2em;
+}
+
+.headerIcon {
+  margin-right: 15px !important;
+}
+
+.app .connect-warning {
+  padding-top: 50px;
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 1);
+  opacity: 0.95;
+}
+
+.title {
+  position: relative;
+  box-shadow: 0 1px 0 #0c0d0e1a, 0 1px 6px #3b40451a;
+  border-top: 3px solid #F48024;
+}
+
+.title a {
+  font-size: 1.5rem;
+}
+
+.title .status {
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  margin: 14px;
+}
+
+.app .config form.edit {
+  margin-bottom: 1rem;
+}
+
+.app .config form.edit input {
+  font-family: monospace;
+}
+
+.app .config form.edit .buttons {
+  text-align: center;
+}
+
+.section-header {
+  margin-top: 20px;
+  position: relative;
+}
+
+.section-header .right {
+  position: absolute;
+  right: 0px;
+  top: 1px;
+  margin: 9px;
+  font-size: 0.75rem;
+  color: grey;
+}
+
+table.tcld .name {
+  word-break: break-all;
+}
+
+.uploads .upload .size {
+  width: 100px;
+}
+
+[onfileclick] {
+  cursor: pointer;
+}
+
+[ondropfile] {
+  position: relative;
+}
+
+[ondropfile] .file-drop-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 102%;
+  margin-top: 1%;
+  margin-left: -1%;
+  pointer-events: none;
+  background: rgba(173, 216, 230, 0.5);
+  opacity: 0;
+  transition: opacity ease 0.3s;
+  z-index: 5;
+  overflow: hidden;
+}
+
+[ondropfile] .file-drop-cover.shown {
+  opacity: 1;
+}
+
+[ondropfile] .file-drop-cover .dots {
+  height: 100%;
+  border: 1px dotted #333;
+  border-radius: 3px;
+}
+
+[ondropfile] .file-drop-cover .dots .msg {
+  position: absolute;
+  text-align: center;
+  font-size: 2em;
+  left: 0;
+  top: 30px;
+  width: 100%;
+}
+
+.margin-top {
+  margin-top: 8px;
+}
+
+.logo {
+  width: 45px;
+  vertical-align: middle;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}

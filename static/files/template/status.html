@@ -1,0 +1,53 @@
+<div class="section-header">
+  <h3 class="ui header">
+    Status
+  </h3>
+</div>
+
+<div class="margin-top" ng-if="numKeys(state.Users) > 1">
+  <a class="ui green image label">
+    Online
+    <div class="detail">{{ numKeys(state.Users) }} Users</div>
+  </a>
+</div>
+
+<div class="margin-top">
+  <a class="ui blue image label">
+    Version
+    <div class="detail">{{ state.Stats.Version }}</div>
+  </a>
+  <a class="ui teal image label">
+    Go
+    <div class="detail">{{ state.Stats.Runtime }}</div>
+  </a>
+</div>
+
+<div class="margin-top" ng-if="state.Stats.System.set">
+  <a class="ui green image label">
+    CPU
+    <div class="detail">{{ state.Stats.System.cpu | round }}%</div>
+  </a>
+  <a class="ui green image label">
+    Memory
+    <div class="detail">{{ (100*state.Stats.System.memoryUsed/state.Stats.System.memoryTotal) | round }}%</div>
+  </a>
+  <a class="ui green image label">
+    Storage
+    <div class="detail">{{ (100*state.Stats.System.diskUsed/state.Stats.System.diskTotal) | round }}%</div>
+  </a>
+</div>
+
+<div class="margin-top" ng-if="state.Stats.Uptime">
+  <a class="ui green image label">
+    Up
+    <div class="detail">{{ ago(state.Stats.Uptime) }}</div>
+  </a>
+  <a class="ui teal image label">
+    Hostname
+    <div class="detail">{{ state.Stats.System.hostname }}</div>
+  </a>
+  <a class="ui teal image label">
+    IP
+    <div class="detail">{{ state.Stats.System.ipaddress }}</div>
+  </a>
+</div>

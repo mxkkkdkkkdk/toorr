@@ -1,0 +1,21 @@
+[Unit]
+Description=TorCloud Service
+After=syslog.target
+After=network.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/root/src/github.com/yohix/torcloud
+ExecStart=/root/src/github.com/yohix/torcloud/torcloud
+Restart=always
+Environment=USER=root HOME=/root
+
+ProtectSystem=full
+PrivateDevices=yes
+PrivateTmp=yes
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target
