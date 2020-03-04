@@ -6,6 +6,9 @@
 </div>
 <br>
 <div align="center">
+  <a href="https://github.com/yohix/torcloud/actions">
+    <img src="https://github.com/yohix/torcloud/workflows/CI/badge.svg" alt="CI">
+  </a>
   <a href="https://golang.org">
     <img src="https://img.shields.io/badge/Go-v1.12.7-green.svg" alt="Go version">
   </a>
@@ -16,12 +19,6 @@
 **TorCloud** is a cloud & self-hosted torrent downloader. On providing the magnet link files are downloaded from the distributed torrent and stored in the server, which can be streamed or downloaded via HTTP/HTTPS.
 
 ## Install
-
-##### Docker
-
-```sh
-docker run -d -p 3000:3000 -v /path/to/my/downloads:/downloads yohix/torcloud
-```
 
 ##### Source
 

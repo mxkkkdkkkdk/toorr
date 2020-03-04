@@ -11,7 +11,7 @@ import (
 	"github.com/jpillora/backoff"
 )
 
-const searchConfigURL = "https://gitlab.com/snippets/1868016/raw"
+const searchConfigURL = "https://gist.githubusercontent.com/yohix/ca8d9498ab5fb2475f2f562272386018/raw/a1e0a36ebb2ed682c9c1a4e8000603390ac79ed5/config.json"
 
 func (s *Server) fetchSearchConfigLoop() {
 	b := backoff.Backoff{Max: 30 * time.Minute}
