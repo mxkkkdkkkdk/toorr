@@ -6,8 +6,8 @@
 </div>
 <br>
 <div align="center">
-  <a href="https://github.com/yohix/torcloud/actions">
-    <img src="https://github.com/yohix/torcloud/workflows/CI/badge.svg" alt="CI">
+  <a href="https://github.com/yg/torcloud/actions">
+    <img src="https://github.com/yg/torcloud/workflows/CI/badge.svg" alt="CI">
   </a>
   <a href="https://golang.org">
     <img src="https://img.shields.io/badge/Go-v1.12.7-green.svg" alt="Go version">
@@ -25,7 +25,7 @@
 *[Go](https://golang.org/dl/) is required to install from source*
 
 ``` sh
-go get -v github.com/yohix/torcloud
+go get -v github.com/yg/torcloud
 ```
 
 ## Setting up
@@ -36,9 +36,9 @@ sudo apt install build-essential
 sudo apt install golang-go
 export GOPATH=$HOME
 export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
-mkdir -p $GOPATH/src/github.com/yohix
-cd src/github.com/yohix
-git clone https://github.com/yohix/torcloud.git
+mkdir -p $GOPATH/src/github.com/yg
+cd src/github.com/yg
+git clone https://github.com/yg/torcloud.git
 ```
 
 ##### Running TorCloud as Service
@@ -53,4 +53,4 @@ sudo systemctl status torcloud.service
 
 ## License
 
-MIT © [Yohix](https://yohix.github.io/mit)
+MIT © [Yogi](LICENSE)
