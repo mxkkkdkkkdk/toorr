@@ -16,8 +16,8 @@ import (
 	"time"
 
 	"github.com/NYTimes/gziphandler"
-	"github.com/yohix/torcloud/engine"
-	"github.com/yohix/torcloud/static"
+	"github.com/yg/torcloud/engine"
+	"github.com/yg/torcloud/static"
 	"github.com/jpillora/cookieauth"
 	"github.com/jpillora/requestlog"
 	"github.com/jpillora/scraper/scraper"

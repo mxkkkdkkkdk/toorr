@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/yohix/torcloud/server"
+	"github.com/yg/torcloud/server"
 )
 
 var VERSION = "1.0.0"

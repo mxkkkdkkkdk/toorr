@@ -7,8 +7,8 @@ After=network.target
 Type=simple
 User=root
 Group=root
-WorkingDirectory=/root/src/github.com/yohix/torcloud
-ExecStart=/root/src/github.com/yohix/torcloud/torcloud
+WorkingDirectory=/root/src/github.com/yg/torcloud
+ExecStart=/root/src/github.com/yg/torcloud/torcloud
 Restart=always
 Environment=USER=root HOME=/root
 
